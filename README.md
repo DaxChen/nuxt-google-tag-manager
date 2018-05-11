@@ -21,18 +21,30 @@ The module features
 ```js
 {
   modules: [
-    // Simple usage
-    'nuxt-google-tag-manager',
-
-    // With options
-    ['nuxt-google-tag-manager', { /* module options */ }],
- ]
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXXXX' }],
+  ]
 }
 ```
 
-## Usage
+## Options
 
-Module Description
+### `id`
+- Required
+Should be in form of `GTM-XXXXXXX`
+
+### Other options
+```js
+{
+  layer: 'dataLayer',
+  env: {
+    gtm_auth:        '...',
+    gtm_preview:     '...',
+    gtm_cookies_win: '...'
+  },
+  scriptURL: '//example.com',
+  delay: 300 // (ms) the time delay to wait for page transition before firing event
+}
+```
 
 ## Development
 
