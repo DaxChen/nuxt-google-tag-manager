@@ -1,6 +1,6 @@
 {
   "name": "nuxt-google-tag-manager",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Nuxt.js module for google tag manager, forked from official modules repo to add custom settings",
   "license": "MIT",
   "contributors": [
