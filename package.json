@@ -1,6 +1,6 @@
 {
   "name": "nuxt-google-tag-manager",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Nuxt.js module for google tag manager, forked from official modules repo to add custom settings",
   "license": "MIT",
   "contributors": [
@@ -8,7 +8,7 @@
       "name": "DaxChen <dd@daxchen.com>"
     }
   ],
-  "main": "lib/module.js",
+  "main": "module.js",
   "repository": "https://github.com/DaxChen/nuxt-google-tag-manager",
   "publishConfig": {
     "access": "public"
@@ -19,8 +19,9 @@
     "test": "npm run lint && jest",
     "release": "standard-version && git push --follow-tags && npm publish"
   },
-  "eslintIgnore": ["lib/templates/*.*"],
-  "files": ["lib"],
+  "eslintIgnore": [
+    "lib/templates/*.*"
+  ],
   "jest": {
     "testEnvironment": "node",
     "collectCoverage": true
